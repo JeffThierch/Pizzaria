@@ -14,6 +14,29 @@
     
 <div class="container">
 
+    <div class="hamburgerMenu">
+        <div class="line" id="line1"></div>
+        <div class="line" id="line2"></div>
+        <div class="line" id="line3"></div>
+        <span>fechar</span>
+    </div> 
+
+    <aside class="sidebar">
+        <nav>
+            <ul class="menu">
+                <li class="menu-item"><a href="#" class="menu-link">Home</a></li>
+                <li class="menu-item"><a href="#historia" class="menu-link">Sobre Nós</a></li>
+                <li class="menu-item"><a href="#promocao" class="menu-link">Promoçoes</a></li>
+                <li class="menu-item"><a href="#contato" class="menu-link">Contato</a></li>
+            </ul>
+        </nav>
+        <div class="social-media">
+            <a href="https://www.facebook.com/jeehthierch"><i class="fab fa-facebook"></i></a>
+            <a href="https://github.com/JeffThierch"><i class="fab fa-github"></i></a>
+            <a href="https://www.instagram.com/jeehthierch/"><i class="fab fa-instagram"></i></a>
+        </div>
+    </aside>
+
 <header>
     <div class="img-wrapper">
         <img src="./imagens/bg.jpg" alt="Foto pizza">
@@ -21,11 +44,10 @@
     <div class="banner">
         <h1>Union Pizza's</h1>
         <p>Experimente o melhor da pizza.</p>
-        <a href="#"><button>Sobre Nós</button></a>
+        <a href="#contato"><button>Peça já</button></a>
     </div>
 </header>
-
-<section class="area-historia">
+<section class="area-historia" id = "historia">
     <div class="historia-header">
         <h1>Nossa Historia</h1>
     </div>
@@ -40,9 +62,9 @@
         <p>Anos e anos se passaram... Pessoas entraram e saíram desta casa até chegar a atual fase, com uma nova direção que está no comando a mais de 10 anos, trazendo muitas melhorias para a casa, proporcionando mais prazer e conforto aos nossos clientes e amigos.</p>
     </div>
 </section>
-<section class="area-Promocao">
+<section class="area-promocao" id = "promocao">
     <div class="promocao-header">
-        <h1>Nossas Promocoes</h1>
+        <h1>Promoçoes do dia</h1>
     </div>
     <div class="promocoes">
         <div class="card">
@@ -81,10 +103,50 @@
     </div>
 
 </section>
+<section class="sessao-contato" id = "contato">
+    <div class="contato-wrapper">
+        <div class="contato-left"></div>
+        <div class="contato-right">
+            <h1>Contato</h1>
+            <form>
+                <div class="input-group">
+                    <input type="text" class = "field" id = "nome">
+                    <label for="nome" class = "field-label">Nome</label>
+                </div>
+                <div class="input-group">
+                    <input type="text" class = "field" id ="email">
+                    <label for="email" class = "field-label">Email</label>
+                </div>
+                <div class="input-group">
+                    <textarea  class = "field" id="mensagem"></textarea>
+                    <label for="mensagem" class = "field-label">Mensagem</label>
+                </div>
+                <button type = "submit" class = "btn-submit">Enviar</button>
+                <p>Telefone: (99)3000-2000 / (99)98000-00</p>
+            </form>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="footer-content">
+        <p>
+            Copyright &copy; 2020, JEFFERSON THIERCH - Todos os direitos reservados
+        </p>
+        <div class="social-list">
+            <ul>
+                <li><a href="https://www.facebook.com/jeehthierch"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="https://www.instagram.com/jeehthierch/"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="https://github.com/JeffThierch"><i class="fab fa-github"></i></a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
 
 
 </div>
 
 
 </body>
+<script src="./script.js"></script>
 </html>
